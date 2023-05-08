@@ -1,0 +1,80 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header_container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* ============== FOR CTA ======================== */
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.4rem;
+    justify-content: center;
+}
+
+/* ============== Header Social ======================== */
+.header_socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 13.5rem;
+    bottom: 4rem;
+}
+
+.header_socials::after{
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ============== MY IMAGE ======================== */
+.moi{
+    /* background-color: var(--white); */
+    /* change background? but if i change to linkedin pic it may not be needed hmm */
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 15rem 15rem 15rem 15rem;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+
+/* ===========SCROLL DOWN ======================= */
+.scroll_down{
+    position: absolute;
+    right: 2.3rem;
+    bottom: 10rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    /* fonts weight only available in 300, 400,500, 600 */
+    font-size: 0.9rem;
+}
+
+/*Media Query for MEDIUM sized display devices */
+@media screen and (max-width: 1024px) {
+    header{
+        height: 68vh;
+    }
+ }
+    
+
+ /*Media Query for SMALL DEVICES */
+ @media screen and (max-width: 600px) {
+    header{
+        height: 100vh;
+    }
+    .header_socials,.scroll_down{
+        display: none;
+    }
+ }
