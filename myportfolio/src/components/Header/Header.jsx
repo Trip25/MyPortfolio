@@ -1,7 +1,6 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-// import ME from '../../assets/LinkedIn profilepic.jpg'
 import ME from '../../assets/trippyfinal.png'
 import HeaderSocial from './/HeaderSocial.jsx'
 

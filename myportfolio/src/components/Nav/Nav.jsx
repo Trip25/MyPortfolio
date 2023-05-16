@@ -1,15 +1,21 @@
 import React from 'react'
 import './nav.css'
 import {BiHomeHeart} from 'react-icons/bi'
+import {FaUserAstronaut} from 'react-icons/fa'
+import {BsFillRocketTakeoffFill} from 'react-icons/bs'
+import {GoDeviceCamera, GoCommentDiscussion} from 'react-icons/go'
+import { useState } from 'react'
+
 
 const Nav = () => {
+  const [activeNav, setActiveNav] = useState('#')
   return (
     <nav className="nav">
-      <a href="#home" className="nav__link"><BiHomeHeart/>Home</a>
-      <a href="#about" className="nav__link"><BiHomeHeart/>About Me</a>
-      <a href="#experience" className="nav__link"><BiHomeHeart/>Experience</a>
-      <a href="#project" className="nav__link"><BiHomeHeart/>Projects</a>
-      <a href="#contact" className="nav__link"><BiHomeHeart/>Contact</a>
+      <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active': ''}><BiHomeHeart/></a>
+      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active': ''}><FaUserAstronaut/></a>
+      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active': ''}><BsFillRocketTakeoffFill/></a>
+      <a href="#projects" onClick={() => setActiveNav('#projects')} className={activeNav === '#projects' ? 'active': ''}><GoDeviceCamera/></a>
+      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active': ''}><GoCommentDiscussion/></a>
     </nav>
   )
 }
