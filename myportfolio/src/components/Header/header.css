@@ -44,9 +44,9 @@ header{
     height: 30rem;
     position: absolute;
     left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 15rem 15rem 15rem 15rem;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;
+    margin-top: 0rem;
+    border-radius: 10rem 15rem 20rem 15rem;
+    padding: 5rem 1.5rem 2rem 1.5rem;
 }
 
 
@@ -56,7 +56,7 @@ header{
     right: 2.3rem;
     bottom: 10rem;
     transform: rotate(90deg);
-    font-weight: 300;
+    font-weight: 500;
     /* fonts weight only available in 300, 400,500, 600 */
     font-size: 0.9rem;
 }
