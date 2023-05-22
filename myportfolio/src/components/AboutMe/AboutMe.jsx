@@ -44,8 +44,9 @@ const AboutMe = () => {
         I am currently a student of the School of Code Bootcamp Cohort 14(to graduate this Aug 2023), where I learned a variety of skills from the the full stack <br/>
         I am passionate about creating applications that are user-friendly and accessible to all. I am currently looking for a role as a junior developer.
       </p>
-
-        <a href="#contact" className='btn-holler'> Talk to me </a>
+     
+      <a href="#contact" className='btn btn-primary'> Talk to me </a>
+     
       </div>
     </div>
     </section>
