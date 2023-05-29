@@ -38,13 +38,14 @@ const AboutMe = () => {
           <small>Cooking/Baking</small>
           </article>
         </div>
+        <br />
       <p>
         Hello there, my name is Tripti. I am a full-stack developer based in Farnborough, UK. I have a background in Accounting and Finance but was seeking to learn something different and after being egged on by my friends I decided to take on the challenge of learning to code and take a step into the  tech world.
           <br />
         I am currently a student of the School of Code Bootcamp Cohort 14(to graduate this Aug 2023), where I learned a variety of skills from the the full stack <br/>
         I am passionate about creating applications that are user-friendly and accessible to all. I am currently looking for a role as a junior developer.
       </p>
-     
+     <br />
       <a href="#contact" className='btn btn-primary'> Talk to me </a>
      
       </div>
