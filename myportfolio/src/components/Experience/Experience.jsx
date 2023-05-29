@@ -98,34 +98,34 @@ const Experience = () => {
       <div className='experience__other'>
         
         <div className='experience__content'>
-        <article className='experience__article'>
-        <h3>Other</h3>
+      <article className='experience__article'>
+        <h3>Other Skills</h3>
 
         <div className='logo-groups'>
           <h4>User Experience/ User Interface</h4>
-          </div>
+        </div>
           {/* Git */}
-          <div className='logo-groups'>
+        <div className='logo-groups'>
           <img src={Git} alt="git logo" id="git-logo" className='logos'/>
           <h4>Git</h4>
-          </div>
+        </div>
           {/* Github */}
-          <div className='logo-groups'>
+        <div className='logo-groups'>
           <img src={Github} alt="github logo" id="github-logo" className='logos'/>
           <h4>Github</h4>
-          </div>
+        </div>
           {/* jest */}
-          <div className='logo-groups'>
+        <div className='logo-groups'>
           <img src={jest} alt="jest logo" id="jest-logo" className='logos'/>
           <h4>Jest</h4>
-          </div>
+        </div>
           {/* playwright */}
-          <div className='logo-groups'>
+        <div className='logo-groups'>
           <img src={playwright} alt="playwright logo" id="playwright-logo" className='logos'/>
           <h4>Playwright End-to-end Testing</h4>
-          </div>
+        </div>
           
-        </article>
+      </article>
         </div>
       </div>
     </div>

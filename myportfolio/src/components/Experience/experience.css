@@ -1,13 +1,7 @@
-.experience__content{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2rem;
-    width: 80%;
-    /* grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1rem;
-    gap: 1rem;
-    margin-top: 2rem;
-    width: 80%; */
+.experience__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
 }
 .experience__content > div, article:hover{
     background: transparent;
@@ -28,8 +22,6 @@
   
 }
 
-
-
 .logos {
     width: 20%;
     height: 20%;
@@ -48,11 +40,7 @@
     row-gap: 10px;
 }
 
-.experience__frontend, .experience__backend, .experience__other {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-}
-  article > h3{
-    color: var(--color-bg);
+article > h3{
+    color: var(--light-color);
+    text-shadow: 0.5rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
   }
