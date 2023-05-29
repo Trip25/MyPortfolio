@@ -44,3 +44,32 @@ article > h3{
     color: var(--light-color);
     text-shadow: 0.5rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
   }
+
+
+/*Media Query for MEDIUM sized display devices */
+@media screen and (max-width: 1024px) {
+  .experience__container{
+    grid-template-columns: 1fr;
+  }
+  .experience__content{
+      padding: 1rem;
+  }
+  .experience__content > div{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+ }
+    
+
+ /*Media Query for SMALL DEVICES */
+ @media screen and (max-width: 600px) {
+    .experience__container{
+        gap:1rem;
+    }
+
+    .experience__container >div{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+ }
