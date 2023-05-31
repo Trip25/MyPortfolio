@@ -23,17 +23,17 @@
 
 .project__card h3{
     margin: 1rem 0 1rem;
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
 .project__card p{
-    margin-bottom: 1.5rem;
-    line-height: 1.8rem;
+    margin-bottom: 10rem;
+    line-height: 3rem;
 }
 
 .project-item-cta{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -41,7 +41,8 @@
 /*Media Query for MEDIUM sized display devices */
 @media screen and (max-width: 1024px) {
     .projects__container{
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
     }
   
    }
@@ -50,10 +51,11 @@
    /*Media Query for SMALL DEVICES */
    @media screen and (max-width: 600px) {
       .projects__container{
-          gap:1rem;
+        grid-template-columns: 1fr;
+        gap:1rem;
       }
   
-      .project__card{
+      /* .project__card{
             width: 100%;
-      }
+      } */
    }
