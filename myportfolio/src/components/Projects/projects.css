@@ -1,17 +1,34 @@
+*{
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
 .project-container{
  display: grid;
+ justify-content: center;
+ align-items: center;
  grid-template-columns: repeat(3, 1fr);
- gap: 2.2rem;
-    margin: auto;
+ gap: 4rem;
+ margin: auto;
+ background-color: var(--color-primary-variant);
+ contain: content;
+ border-radius: 30px;
+ max-width: 50rem;
+ max-height: 65rem;
 }
 
 .project__card{
     padding: 1rem;
     border-radius: 2rem;
+    max-width: 50rem;
+    max-height: 65rem;
+    margin-bottom: 5rem;
+/* may need to adjust margin-bottom once all projects are added */
 }
 .project__card:hover{
     transition: var(--transition);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.2); */
 }
 
 .project-image{
@@ -19,24 +36,36 @@
     max-height: 20rem;
     max-width: 20rem;
     overflow: hidden;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
 }
 
 .project__card h3{
     margin: 1rem 0 1rem;
     font-size: 3rem;
+    text-align: center;
 }
 
 .project__card p{
     margin-bottom: 10rem;
     line-height: 3rem;
+    text-align: center;
 }
 
 .project-item-cta{
     display: flex;
     gap: 2rem;
     margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+
 }
 
+.cta btn{
+    gap: 100px;
+}
 
 /*Media Query for MEDIUM sized display devices */
 @media screen and (max-width: 1024px) {
