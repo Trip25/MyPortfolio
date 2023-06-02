@@ -1,11 +1,11 @@
-.projects-container{
+.project-container{
  display: grid;
  grid-template-columns: repeat(3, 1fr);
  gap: 2.2rem;
     margin: auto;
 }
 
-.projects_card{
+.project__card{
     padding: 1rem;
     border-radius: 2rem;
 }
@@ -52,7 +52,7 @@
    @media screen and (max-width: 600px) {
       .projects__container{
         grid-template-columns: 1fr;
-        gap:1rem;
+        gap: 0.7em;
       }
   
       /* .project__card{
