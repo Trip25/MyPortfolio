@@ -7,6 +7,17 @@ import recipe from '../../assets/Eataholic-RecipeStorer.png'
 //Will need to import images for each project
 
 
+//SWIPER IMPORTS
+// import Swiper core and required modules
+import { Pagination } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
 //NOTE TO SELF NEED TO UPDATE IN THE PROJECTS TO THE DATA ARRAY
 const data = [
   {
@@ -64,26 +75,38 @@ const Projects = () => {
     <section id='projects'>
       <h5>My recent work</h5>
       <h2>Projects</h2>
-    <div className='container project-container'>
+    <Swiper className='container project-container'
+      // install Swiper modules
+      modules={[Pagination]}
+      spaceBetween={50}
+      slidesPerView={1}
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+    >
     { 
       data.map(({id, image, title, text, github, live}) => {
         return (
-          <article className='project__card'>
+          <SwiperSlide className='project__card'>
             <div className='project__item__img'>
               <img src={image} alt={title} className='project-image' />
             </div>
             <h3>{title}</h3>
             <p>{text}</p>
-            <div className='project__item__cta'>
-            <a href={github} classname='btn' target='_blank' rel='noreferrer'>Github</a>
+            <div className='project__item__cta btns'>
+            <button className='btn'>
+            <a href={github} classname='btn' target='_blank' rel='noreferrer'>Github</a></button>
+            <button className='btn'>
             <a href={live} classname='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
+            </button>
             </div>
-          </article>
+          </SwiperSlide>
         )
       })
     }
     {/* close container div */}
-    </div>
+    </Swiper>
     </section>
   )
 }
