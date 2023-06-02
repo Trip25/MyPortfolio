@@ -60,12 +60,11 @@
     margin-bottom: 1rem;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 
 }
 
-button, a{
-    gap: 10rem;
+.cta btn{
+    gap: 100px;
 }
 
 /*Media Query for MEDIUM sized display devices */

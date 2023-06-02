@@ -95,7 +95,7 @@ const Projects = () => {
             <h3>{title}</h3>
             <p>{text}</p>
             <div className='project__item__cta btns'>
-            <button className='btn'>
+            <button className='cta btn'>
             <a href={github} classname='btn' target='_blank' rel='noreferrer'>Github</a></button>
             <button className='btn'>
             <a href={live} classname='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
