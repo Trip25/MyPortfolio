@@ -13,7 +13,7 @@ const Contact = () => {
       <article className='contact_option'>
       <MdOutlineEmail className='contact_option_icon'/>
       <h4>Email</h4>
-      <h5>putmyemailaddresshere@gmail.com</h5>
+      {/* <h5>Send me an email</h5> */}
       <a href='mailto:'>Send a message</a>
     </article>
     {/* Add Linkedin*/}

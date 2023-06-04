@@ -1,6 +1,6 @@
 .container.contact_container{
-   width: 58%;
-   display: block;
+   width: 50%;
+   display: grid;
    grid-template-columns: 30% 58%;
    gap: 12%;
 }
@@ -15,16 +15,15 @@
     text-align:center;
     padding: 1rem;
     border-radius: 1.2rem;
-    border: 1px solid black;
-    /* change border when finsihed testing! */
-    background: var(--color-bg-variant);
-    transition: var(--transition);
+    border: 1px solid transparent;
+    background: var(--color-primary-variant);
 }
 
 .contact_option:hover{
-    background: var(--color-bg);
+    background: transparent;
     color: var(--color-primary);
     border-color: transparent;
+    backdrop-filter: hue-rotate(40deg);
 }
 
 .contact_option_icon{
@@ -36,8 +35,8 @@
     display: inline-block;
     font-size: 1rem;
     margin-top: 0.7rem;
-    color: var(--color-primary);
-    transition: var(--transition);
+    /* color: var(--color-primary); */
+
 }
 
 /* NOW Styling the FORMS */
@@ -48,12 +47,18 @@ form{
 }
 
 input, textarea{
-    padding: 1.2rem;
+    width:100%;
+    padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
     border: 2px solid var(--color-primary);
     resize: none;
     color: var(--color-white);
+    
+}
+
+::placeholder{
+    color: var(--light-color);
 }
 
 /*Media Query for MEDIUM sized display devices */
