@@ -27,11 +27,12 @@ header{
     position: absolute;
     left: 13.5rem;
     bottom: 4rem;
+    transform: scale(2);
 }
 
 .header_socials::after{
     content: '';
-    width: 1px;
+    width: 2px;
     height: 2rem;
     background: var(--color-primary);
 }
@@ -40,8 +41,8 @@ header{
 .moi{
     /* background-color: var(--white); */
     /* change background? but if i change to linkedin pic it may not be needed hmm */
-    width: 22rem;
-    height: 30rem;
+    width: 28rem;
+    height: 32rem;
     position: absolute;
     left: calc(50% - 11rem);
     margin-top: 0rem;
@@ -58,7 +59,7 @@ header{
     transform: rotate(90deg);
     font-weight: 500;
     /* fonts weight only available in 300, 400,500, 600 */
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 /*Media Query for MEDIUM sized display devices */

@@ -29,6 +29,9 @@
 
 html{
     scroll-behavior: smooth;
+    /* overflow: hidden; */
+    /* overflow gets rid of the white space showing when I scroll but if I have it, I am now unable to scroll hmm */
+    /* height: 100%; */
 
 }
 
@@ -45,6 +48,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     /*might need to change this*/
+    /* height: 100%; */
+    /* overflow: auto; */
+    text-shadow: 2px 2px 4px #000000;
 }
 
 /* General Styling */

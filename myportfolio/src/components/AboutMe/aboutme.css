@@ -8,8 +8,6 @@
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
-    /* border: 1px #ffffff; */
-    /* for testing */
     background: linear-gradient(
         125deg,
         transparent,
@@ -17,6 +15,8 @@
         transparent
     );
     display: grid;
+    margin: 0 0 0 30rem;
+    grid-template-columns: 1fr;
     place-items: center;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .aboutme-cards{
-    background: var(--color-bg-variant);
+    background: var(--color-primary-variant);
     border: 1px solid transparent;
     border-radius: 2rem;
     padding: 1rem;
@@ -64,7 +64,7 @@
 .aboutme-cards > h5{
     margin-top: 1rem;
     font-size: 0.9rem;
-    color: var(--color-primary);
+    color: var(--white);
 }
 
 .aboutme-cards > small{
@@ -72,12 +72,13 @@
     color: var(--light-color);
 }
 
-.aboutme-text p{
+.paragraph{
     color: var(--light-color);
     margin: 2rem 0 2.6rem;
     font-size: 1.2rem;
     line-height: 1.5;
     text-align: justify;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 /*Media Query for MEDIUM sized display devices */
@@ -95,6 +96,17 @@
         margin: 1rem 0 1.5rem;
     }
  }
+
+.btn.btn-primary{
+    background: var(--color-primary);
+    color: var(--color-bg);
+    border: 1px solid var(--color-primary);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    text-shadow: none;
+}
     
 
  /*Media Query for SMALL DEVICES */
