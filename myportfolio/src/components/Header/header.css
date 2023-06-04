@@ -41,8 +41,8 @@ header{
 .moi{
     /* background-color: var(--white); */
     /* change background? but if i change to linkedin pic it may not be needed hmm */
-    width: 28rem;
-    height: 32rem;
+    width: 27rem;
+    height: 28rem;
     position: absolute;
     left: calc(50% - 11rem);
     margin-top: 0rem;
