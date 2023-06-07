@@ -15,11 +15,11 @@ const Footer = () => {
 <li><a href='#contact' >Contact Me</a></li>
 </ul>
 <div className='footer__socials'>
-<a href='https://www.linkedin.com/in/tripti-gurung-294089a6/' target='_blank' ><BsLinkedin /> </a>
+<a href='https://www.linkedin.com/in/tripti-g-294089a6/' target='_blank' ><BsLinkedin /> </a>
 <a href='https://github.com/Trip25' target='_blank' ><BsGithub/></a>
 <a href='https://twitter.com/TriptiGuru87880' target='_blank' ><BsTwitter/></a>
 </div>
-<div className='footer__copyright'><small>&copy;Tripti 2023</small></div>
+<div className='footer__copyright'><small>&copy;Tripti "Please give me a job" June 2023</small></div>
     </footer>
   )
 }
