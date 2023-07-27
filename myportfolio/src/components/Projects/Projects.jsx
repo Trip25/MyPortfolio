@@ -47,10 +47,10 @@ const data = [
   {
     id: 4,
     image: king,
-    title: 'Project 4',
-    text: 'Coming Soon',
-    github: 'https://github.com',
-    live: 'https://github.com'
+    title: 'SOC Final Project: StoryScape',
+    text: '5 week project working in a group of 6, keep all your precious stories from your relatives here!',
+    github: 'https://github.com/SOC-System-32/StoryScape-Frontend/tree/main',
+    live: 'https://storyscape.netlify.app/'
   },
   {
     id: 5,
