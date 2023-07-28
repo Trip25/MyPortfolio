@@ -19,7 +19,7 @@ const Footer = () => {
 <a href='https://github.com/Trip25' target='_blank' ><BsGithub/></a>
 <a href='https://twitter.com/TriptiGuru87880' target='_blank' ><BsTwitter/></a>
 </div>
-<div className='footer__copyright'><small>&copy;Tripti "Please give me a job" June 2023</small></div>
+<div className='footer__copyright'><small>&copy;Tripti "Please give me a job" July 2023</small></div>
     </footer>
   )
 }
