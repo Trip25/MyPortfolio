@@ -4,6 +4,8 @@ import king from '../../assets/Vegeta.jpeg' //remove this placeholder image
 import scrip4 from '../../assets/Scriptastic4-MemoryJogger.png' 
 import fakestore from '../../assets/Fakestore.png'
 import recipe from '../../assets/Eataholic-RecipeStorer.png'
+import storyscape from '../../assets/storyscape.png'
+
 //Will need to import images for each project
 
 
@@ -46,7 +48,7 @@ const data = [
   },
   {
     id: 4,
-    image: king,
+    image: storyscape,
     title: 'SOC Final Project: StoryScape',
     text: '5 week project working in a group of 6, keep all your precious stories from your relatives here!',
     github: 'https://github.com/SOC-System-32/StoryScape-Frontend/tree/main',
