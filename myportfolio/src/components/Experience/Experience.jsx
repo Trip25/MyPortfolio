@@ -104,6 +104,18 @@ const Experience = () => {
         <div className='logo-groups'>
           <h4>User Experience/ User Interface</h4>
         </div>
+        <div className='logo-groups'>
+          <h4>Figma</h4>
+        </div>
+        <div className='logo-groups'>
+          <h4>Jira</h4>
+        </div>
+        <div className='logo-groups'>
+          <h4>Confluence</h4>
+        </div>
+        <div className='logo-groups'>
+          <h4>Bitbucket</h4>
+        </div>
           {/* Git */}
         <div className='logo-groups'>
           <img src={Git} alt="git logo" id="git-logo" className='logos'/>

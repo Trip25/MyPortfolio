@@ -40,10 +40,15 @@ const AboutMe = () => {
         </div>
         <br />
       <p className='paragraph'>
-        Hello there, my name is Tripti. I am a full-stack developer based in Farnborough, UK. I have a background in Accounting and Finance but was seeking to learn something different and after being egged on by my friends I decided to take on the challenge of learning to code and take a step into the  tech world.
-          <br />
-        I am currently a student of the School of Code Bootcamp Cohort 14(to graduate this Aug 2023), where I learned a variety of skills from the the full stack <br/>
-        I am passionate about creating applications that are user-friendly and accessible to all. I am currently looking for a role as a junior developer.
+        Hi there, my name is Tripti. 
+        <br />
+        So I've had a pretty non-traditional path, coming from an Accounting and Finance backgroun. I've took a step into the tech world, taking a chance with <a href='https://codefirstgirls.com/'>Code First Girls</a>, learning some amazing data manipulation, learning to clean data and making it usable with the likes of python, matplotlib, tableau and Power BI. I really loved being able to visualise the data and tell a story with it.
+        <br />
+        Then I took another bootcamp into another field of tech and learn all about Full stack Development with <a href='https://schoolofcode.co.uk/'>School of Code</a> becoming part of cohort 14. It was an amazing tough experience and I made lifelong friends.
+        <br />
+        Which leads onto now, where I am currently working for KFC as an Engineer based in the Menu Platform team, ensuring everything is working for the staff in restaurants but also the lovely customers who love chicken!
+        <br />
+        I'm working hard to make sure I keep up with the trends and am actively working on getting my AWS certifications!
       </p>
      <br />
       <a href="#contact" className='btn btn-primary'> Talk to me </a>
