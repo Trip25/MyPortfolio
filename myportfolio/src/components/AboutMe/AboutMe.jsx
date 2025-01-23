@@ -42,7 +42,7 @@ const AboutMe = () => {
       <p className='paragraph'>
         Hi there, my name is Tripti. 
         <br />
-        So I've had a pretty non-traditional path, coming from an Accounting and Finance backgroun. I've took a step into the tech world, taking a chance with <a href='https://codefirstgirls.com/'>Code First Girls</a>, learning some amazing data manipulation, learning to clean data and making it usable with the likes of python, matplotlib, tableau and Power BI. I really loved being able to visualise the data and tell a story with it.
+        So I've had a pretty non-traditional path, coming from an Accounting and Finance background. I've took a step into the tech world, taking a chance with <a href='https://codefirstgirls.com/'>Code First Girls</a>, learning some amazing data manipulation, learning to clean data and making it usable with the likes of python, matplotlib, tableau and Power BI. I really loved being able to visualise the data and tell a story with it.
         <br />
         Then I took another bootcamp into another field of tech and learn all about Full stack Development with <a href='https://schoolofcode.co.uk/'>School of Code</a> becoming part of cohort 14. It was an amazing tough experience and I made lifelong friends.
         <br />
