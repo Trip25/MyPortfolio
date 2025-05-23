@@ -23,7 +23,7 @@ const Contact = () => {
 
   return (
     <section id='contact'>
-    <h5>Get in Touch</h5>
+    <p className="text-light">Get in Touch</p>
     <h2>Contact Me</h2>
     <div className='container contact_container'>
     {/* Email option */}
@@ -32,7 +32,7 @@ const Contact = () => {
       <MdOutlineEmail className='contact_option_icon'/>
       <h4>Email</h4>
       {/* <h5>Send me an email</h5> */}
-      <a href='mailto:'>Send a message</a>
+      <a href='mailto:tripti.gurung@example.com'>Send a message</a>
     </article>
     {/* Add Linkedin*/}
     {/* <article className='contact_option'>
@@ -52,9 +52,12 @@ const Contact = () => {
     </div>
 {/* End of contact options */}
 <form ref={form} onSubmit={sendEmail}>
-<input type='text' placeholder='Your Full Name' name='name' required/>
-<input type='email' placeholder='Your Email' name='email' required/>
-<textarea name='message' placeholder='Your Message' rows='7' required></textarea>
+<label htmlFor="nameInput" className="visually-hidden">Your Full Name</label>
+<input type='text' id="nameInput" placeholder='Your Full Name' name='name' required/>
+<label htmlFor="emailInput" className="visually-hidden">Your Email</label>
+<input type='email' id="emailInput" placeholder='Your Email' name='email' required/>
+<label htmlFor="messageInput" className="visually-hidden">Your Message</label>
+<textarea id="messageInput" placeholder='Your Message' name='message' rows='7' required></textarea>
 <button type='submit'className='btn btn-primary'>Send Message</button>
 </form>
     </div>

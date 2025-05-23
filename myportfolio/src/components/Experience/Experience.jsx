@@ -19,7 +19,7 @@ import playwright from '../../assets/playwright-logo.svg'
 const Experience = () => {
   return (
     <section id='experience'>
-    <h5>What skills do I have</h5>
+    <p className="text-light">What skills do I have</p>
     <h2>My Experience</h2>
 
     <div className='container experience__container'>

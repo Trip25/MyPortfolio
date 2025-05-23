@@ -12,12 +12,12 @@ const Nav = () => {
   return (
     <nav className="nav">
     {/* eslint-disable-next-line */}
-      <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active': ''}><BiHomeHeart/></a>
+      <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active': ''} aria-label="Home"><BiHomeHeart/></a>
     {/* FYI if I come to forget, the disable is needed as it doesn't like the empty # above */}
-      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active': ''}><FaUserAstronaut/></a>
-      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active': ''}><BsFillRocketTakeoffFill/></a>
-      <a href="#projects" onClick={() => setActiveNav('#projects')} className={activeNav === '#projects' ? 'active': ''}><GoDeviceCamera/></a>
-      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active': ''}><GoCommentDiscussion/></a>
+      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active': ''} aria-label="About"><FaUserAstronaut/></a>
+      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active': ''} aria-label="Experience"><BsFillRocketTakeoffFill/></a>
+      <a href="#projects" onClick={() => setActiveNav('#projects')} className={activeNav === '#projects' ? 'active': ''} aria-label="Projects"><GoDeviceCamera/></a>
+      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active': ''} aria-label="Contact"><GoCommentDiscussion/></a>
     </nav>
   )
 }

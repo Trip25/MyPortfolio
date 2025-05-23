@@ -30,6 +30,13 @@ nav a:hover{
     transform: scale(1.1);
 }
 
+nav a:focus {
+    background: rgba(17, 1, 1, 0.4);
+    transform: scale(1.1);
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
 nav a.active{
     background: var(--color-primary); 
     color: var(--white);

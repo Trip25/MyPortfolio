@@ -9,14 +9,14 @@ const Header = () => {
     <header> 
     {/* HEADER */}
       <div className="container header__container"> 
-      <h5>Hey, my name is</h5>
+      <p>Hey, my name is</p>
       <h1>Tripti Gurung</h1>
-      <h5 className='text-light'>Full Stack Developer</h5>
+      <h2 className='text-light'>Full Stack Developer</h2>
       <CTA />
       <HeaderSocial />
       {/* ABOUT ME */}
       <div className='moi'>
-        <img src={ME} alt="moi" />
+        <img src={ME} alt="Tripti Gurung - Full Stack Developer" />
       </div>
       <a href='#contact' className='scroll_down'>Scroll down</a>
 
