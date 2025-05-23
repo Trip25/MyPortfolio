@@ -3,12 +3,14 @@ import './header.css'
 import CTA from './CTA'
 import ME from '../../assets/trippyfinal.png'
 import HeaderSocial from './/HeaderSocial.jsx'
+import ThemeToggle from '../ThemeToggle/ThemeToggle.jsx';
 
-const Header = () => {
+const Header = ({ theme, toggleTheme }) => {
   return (
     <header> 
     {/* HEADER */}
       <div className="container header__container"> 
+        <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       <p>Hey, my name is</p>
       <h1>Tripti Gurung</h1>
       <h2 className='text-light'>Full Stack Developer</h2>

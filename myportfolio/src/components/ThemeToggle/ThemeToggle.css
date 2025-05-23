@@ -1,0 +1,13 @@
+.theme-toggle {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--color-primary); /* Or your preferred background color */
+}
+
+.theme-icon {
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: var(--color-white); /* Or your preferred icon color */
+  display: block;
+}

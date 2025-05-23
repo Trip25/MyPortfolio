@@ -12,46 +12,71 @@
 }
 
 :root{
-    --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
-    /* might change primary and variant once I find a nice colour scheme */
-    --color-primary-variant: rgba(77, 181, 255, 0.4);
-    --white: #fff;
-    --light-color: rgba(255, 255, 255, 0.85);
+    /* Dark Theme Colors */
+    --color-bg-dark: #1f1f38;
+    --color-bg-variant-dark: #2c2c6c;
+    --color-primary-dark: #4db5ff;
+    --color-primary-variant-dark: rgba(77, 181, 255, 0.4);
+    --color-text-dark: #fff; /* Formerly --white */
+    --color-text-light-dark: rgba(255, 255, 255, 0.85); /* Formerly --light-color */
+
+    /* Light Theme Colors */
+    --color-bg-light: #f4f4f4;
+    --color-bg-variant-light: #e0e0e0;
+    --color-primary-light: #007bff; 
+    --color-primary-variant-light: rgba(0, 123, 255, 0.4);
+    --color-text-light-theme: #333333; /* Dark text for light background */
+    --color-text-light-light-theme: rgba(51, 51, 51, 0.85); /* Slightly lighter dark text */
 
     --transition: all 450ms ease;
-
     --container-width-lg: 75%;
     --container-width-md: 85%;
     --container-width-sm: 90%;
 }
 
-html{
-    scroll-behavior: smooth;
-    /* overflow: hidden; */
-    /* overflow gets rid of the white space showing when I scroll but if I have it, I am now unable to scroll hmm */
-    /* height: 100%; */
-
+/* Apply dark theme by default or via class */
+body, body.dark-mode {
+    --current-bg: var(--color-bg-dark);
+    --current-bg-variant: var(--color-bg-variant-dark);
+    --current-primary: var(--color-primary-dark);
+    --current-primary-variant: var(--color-primary-variant-dark);
+    --current-text: var(--color-text-dark);
+    --current-text-light: var(--color-text-light-dark);
+    
+    text-shadow: 2px 2px 4px #000000; 
 }
 
-/* ::-webkit-scrollbar{
-    display: none;
-} */
+body.light-mode {
+    --current-bg: var(--color-bg-light);
+    --current-bg-variant: var(--color-bg-variant-light);
+    --current-primary: var(--color-primary-light);
+    --current-primary-variant: var(--color-primary-variant-light);
+    --current-text: var(--color-text-light-theme);
+    --current-text-light: var(--color-text-light-light-theme);
+
+    text-shadow: none; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Exo 2', sans-serif;
-    /* background: var(--color-bg); */
-    color: var(--white);
+    color: var(--current-text);
     line-height: 1.6;
+    background-color: var(--current-bg);
+}
+
+body.dark-mode {
     background-image: url('../src/assets/bg-texture-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /*might need to change this*/
-    /* height: 100%; */
-    /* overflow: auto; */
-    text-shadow: 2px 2px 4px #000000;
 }
+body.light-mode {
+    background-image: none; 
+}
+
 
 /* General Styling */
 .container{
@@ -75,48 +100,48 @@ section{
 
 section > h2, section > h5 {
     text-align: center;
-    color: var(--light-color);
+    color: var(--current-text-light);
 }
 
 section > h2 {
-    color: var(--color-primary);
+    color: var(--current-primary);
     margin-bottom: 3rem;
 }
 
 .text-light{
-    color: var(--light-color);
+    color: var(--current-text-light);
 }
 
 a{
-    color: var(--color-primary);
+    color: var(--current-primary);
     transition: var(--transition);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px); /* Consider if this filter works well with light mode */
 }
 
 a:hover {
-    color: var(--white);
+    color: var(--current-text); 
 }
 
 .btn{
     width: max-content;
     display: inline-block;
-    color: var(--color-primary);
+    color: var(--current-primary);
     padding: 0.75rem 1.2rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--current-primary);
     transition: var(--transition);
 }
 
 .btn:hover{
-    background: var(--white);
-    color: var(--color-bg);
+    background: var(--current-text); 
+    color: var(--current-bg); 
     border-color: transparent;
 }
 
 .btn-primary{
-    background: var(--color-primary);
-    color: var(--color-bg);
+    background: var(--current-primary);
+    color: var(--current-bg); 
 }
 
 img{
