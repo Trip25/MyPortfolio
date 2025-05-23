@@ -12,7 +12,7 @@
 .experience__content > div h3{
     text-align: center;
     margin-bottom: 2rem;
-    color: var(--light-color);
+    color: var(--white);
 }
 
 .experience__content > div, article{
@@ -41,7 +41,7 @@
 }
 
 article > h3{
-    color: var(--light-color);
+    color: var(--white);
     text-shadow: 0.5rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
   }
 
