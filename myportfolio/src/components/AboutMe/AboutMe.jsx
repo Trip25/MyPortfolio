@@ -7,12 +7,12 @@ import { MdOutlineInterests } from 'react-icons/md'
 const AboutMe = () => {
   return (
     <section id='about'>
-    <h5>Wanna know more</h5>
+    <p className="text-light">Wanna know more</p>
     <h2>About me</h2>
     <div className="container_aboutme">
       <div className="aboutme">
         <div  className='about-me-image'>
-        <img src={MOI} alt="my flower face" />
+        <img src={MOI} alt="Tripti Gurung profile picture" />
         </div>
       </div>
 

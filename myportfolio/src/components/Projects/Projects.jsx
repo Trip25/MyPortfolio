@@ -75,7 +75,7 @@ const data = [
 const Projects = () => {
   return (
     <section id='projects'>
-      <h5>My recent work</h5>
+      <p className="text-light">My recent work</p>
       <h2>Projects</h2>
     <Swiper className='container project-container'
       // install Swiper modules
@@ -97,11 +97,8 @@ const Projects = () => {
             <h3>{title}</h3>
             <p>{text}</p>
             <div className='project__item__cta btns'>
-            <button className='cta btn'>
-            <a href={github} classname='btn' target='_blank' rel='noreferrer'>Github</a></button>
-            <button className='btn'>
-            <a href={live} classname='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
-            </button>
+            <a href={github} className='btn cta' target='_blank' rel='noreferrer'>Github</a>
+            <a href={live} className='btn btn-primary' target='_blank' rel='noreferrer'>Live Demo</a>
             </div>
           </SwiperSlide>
         )

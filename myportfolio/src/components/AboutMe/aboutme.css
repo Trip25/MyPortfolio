@@ -123,7 +123,7 @@
     .aboutme__text p {
         margin: 1rem 0 1.5rem;
         text-align: center;
-        text-shadow: 25px 25px 0px powderblue;
+        /* text-shadow: 25px 25px 0px powderblue; */
     }
     .aboutme__text p{
         margin: 1.5rem 0;

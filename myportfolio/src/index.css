@@ -18,7 +18,7 @@
     /* might change primary and variant once I find a nice colour scheme */
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --white: #fff;
-    --light-color: rgba(255, 255, 255, 0.6);
+    --light-color: rgba(255, 255, 255, 0.85);
 
     --transition: all 450ms ease;
 
@@ -35,9 +35,9 @@ html{
 
 }
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
     display: none;
-}
+} */
 
 body{
     font-family: 'Exo 2', sans-serif;
@@ -123,6 +123,18 @@ img{
     display: block;
     width: 100%;
     object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /*Media Query for MEDIUM sized display devices */
